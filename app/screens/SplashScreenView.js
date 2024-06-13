@@ -1,17 +1,19 @@
 import { StyleSheet, Image, View, Text } from 'react-native'
 import React from 'react'
-import Logo from '../../assets/logo.png'
-import SharkTecLogo from '../../assets/SharkTecLogo.png'
+import Logo from '../../assets/logo.svg'
+import SharkTecLogo from '../../assets/SharkTecLogo.svg'
 
 const SplashScreenView = () => {
   return (
     <View style={styles.container}>
         <View>
-            <Image source={Logo} />
+            {/* <Image source={Logo} /> */}
+            <Logo width={135.1} height={104.68} />
         </View>
         <View style={styles.bottomContainer}>
             <Text style={styles.bottomText}>Feito Por</Text>
-            <Image source={SharkTecLogo} />
+            {/* <Image source={SharkTecLogo} /> */}
+            <SharkTecLogo width={148} height={39.73} />
         </View>
     </View>
   )
@@ -37,6 +39,7 @@ const styles = StyleSheet.create({
     bottomText: {
         fontSize: 20,
         marginBottom: 10,
-        fontWeight: '500'
+        fontWeight: '500',
+        color: '#2E2E2E',
     },
 })
